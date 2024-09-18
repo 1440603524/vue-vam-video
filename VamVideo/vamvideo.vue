@@ -208,8 +208,8 @@ export default {
       this.$emit("canplaythrough");
       this.show = false;
     },
-    errorVd() {
-      this.$emit("error");
+    errorVd(e) {
+      this.$emit("error", e);
     },
     volumechangeVd() {
       this.$emit("volumechange");
